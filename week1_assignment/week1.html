@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #926c6c;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #c29999;
+  padding: 20px;
+}
+</style>
+<body>
+<center><h3>Sample Form</h3></center>
+
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+
+
+    <p>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="DOB">
+        </p>
+    <p>
+        <label for="pnum">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +91 000 000 0000" value="+91 ">
+        
+        </p>
+    <label for="designation">Designation</label>
+    <select id="designation" name="designation">
+        <option value="ug">UG</option>
+        <option value="diploma">Diploma</option>
+        <option value="lecturer">Lecturer</option>
+        <option value="pg">PG</option>
+    </select>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="UK">Canada</option>
+      <option value="USA">USA</option>
+      <option value="Australia">Australia</option>
+      <option value="Japan">South Korea</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
